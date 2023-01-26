@@ -572,10 +572,13 @@ end
 
 function LoadBodySize(target, data)
     Citizen.InvokeNative(0x1902C4CFCC5BE57C, target, BODY_TYPES[tonumber(data.body_size)])
+    NativeUpdatePedVariation(target)
+    
 end
 
 function LoadBodyWaist(target, data)
     Citizen.InvokeNative(0x1902C4CFCC5BE57C, target, WAIST_TYPES[tonumber(data.body_waist)])
+    NativeUpdatePedVariation(target)
 end
 
 function LoadFeatures(target, data)
