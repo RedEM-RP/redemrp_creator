@@ -6,7 +6,6 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 
 
 client_scripts {
-  '@prompts/Prompt.lua',
   'utils/creator_prompts.lua',
   'utils/hairs.lua',
 	'utils/cloth_hash_names.lua',
