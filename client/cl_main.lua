@@ -414,12 +414,12 @@ function OpenBodyMenu()
     for i=88,106 do
         table.insert(HeightOptions, i.."")
     end
-    local SkinToneOptions = {"<img src='nui://rdr_creator/img/skin1.png' height='20'>",
-                             "<img src='nui://rdr_creator/img/skin2.png' height='20'>",
-                             "<img src='nui://rdr_creator/img/skin3.png' height='20'>",
-                             "<img src='nui://rdr_creator/img/skin4.png' height='20'>",
-                             "<img src='nui://rdr_creator/img/skin5.png' height='20'>",
-                             "<img src='nui://rdr_creator/img/skin6.png' height='20'>"}
+    local SkinToneOptions = {"<img src='nui://redemrp_creator/img/skin1.png' height='20'>",
+                             "<img src='nui://redemrp_creator/img/skin2.png' height='20'>",
+                             "<img src='nui://redemrp_creator/img/skin3.png' height='20'>",
+                             "<img src='nui://redemrp_creator/img/skin4.png' height='20'>",
+                             "<img src='nui://redemrp_creator/img/skin5.png' height='20'>",
+                             "<img src='nui://redemrp_creator/img/skin6.png' height='20'>"}
     local elements = {{
         label = "Face",
         value = CreatorCache["head"] or 1,
@@ -976,12 +976,12 @@ end
 
 function OpenEyesMenu()
     MenuData.CloseAll()
-    local EyesColorOptions = {"<img src='nui://rdr_creator/img/skin1.png' height='20'>",
-                              "<img src='nui://rdr_creator/img/skin2.png' height='20'>",
-                              "<img src='nui://rdr_creator/img/skin3.png' height='20'>",
-                              "<img src='nui://rdr_creator/img/skin4.png' height='20'>",
-                              "<img src='nui://rdr_creator/img/skin5.png' height='20'>",
-                              "<img src='nui://rdr_creator/img/skin6.png' height='20'>"}
+    local EyesColorOptions = {"<img src='nui://redemrp_creator/img/skin1.png' height='20'>",
+                              "<img src='nui://redemrp_creator/img/skin2.png' height='20'>",
+                              "<img src='nui://redemrp_creator/img/skin3.png' height='20'>",
+                              "<img src='nui://redemrp_creator/img/skin4.png' height='20'>",
+                              "<img src='nui://redemrp_creator/img/skin5.png' height='20'>",
+                              "<img src='nui://redemrp_creator/img/skin6.png' height='20'>"}
     local elements = {{
         label = "Color",
         value = CreatorCache["eyes_color"] or 1,
