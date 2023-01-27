@@ -1834,6 +1834,7 @@ exports('GetBodyCurrentComponentHash', function(name)
                 end
             end
         end
+        return hash
     else
 
         local id = LoadedComponents[name]
