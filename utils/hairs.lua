@@ -171,7 +171,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_001_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[2] = {
 				[1] = {
@@ -343,7 +343,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_002_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[3] = {
 				[1] = {
@@ -515,7 +515,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_003_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[4] = {
 				[1] = {
@@ -687,7 +687,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_004_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[5] = {
 				[1] = {
@@ -859,7 +859,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_005_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[6] = {
 				[1] = {
@@ -1031,7 +1031,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_006_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[7] = {
 				[1] = {
@@ -1203,7 +1203,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_007_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[8] = {
 				[1] = {
@@ -1375,7 +1375,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_008_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[9] = {
 				[1] = {
@@ -1547,7 +1547,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_009_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[10] = {
 				[1] = {
@@ -1719,7 +1719,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_010_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[11] = {
 				[1] = {
@@ -1891,7 +1891,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_011_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[12] = {
 				[1] = {
@@ -2063,7 +2063,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_012_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[13] = {
 				[1] = {
@@ -2235,7 +2235,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_013_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[14] = {
 				[1] = {
@@ -2407,7 +2407,17 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_014_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
+				[18] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1687567099,
+					['hash_dec_signed'] = 1687567099,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
 			},
 			[15] = {
 				[1] = {
@@ -2579,7 +2589,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_015_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[16] = {
 				[1] = {
@@ -2751,7 +2761,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_016_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[17] = {
 				[1] = {
@@ -2923,7 +2933,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_017_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[18] = {
 				[1] = {
@@ -3095,7 +3105,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_018_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[19] = {
 				[1] = {
@@ -3267,7 +3277,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_019_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[20] = {
 				[1] = {
@@ -3439,7 +3449,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_020_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[21] = {
 				[1] = {
@@ -3611,7 +3621,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_021_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[22] = {
 				[1] = {
@@ -3783,7 +3793,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_022_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[23] = {
 				[1] = {
@@ -3955,7 +3965,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_023_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[24] = {
 				[1] = {
@@ -4127,7 +4137,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_024_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[25] = {
 				[1] = {
@@ -4299,7 +4309,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_025_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[26] = {
 				[1] = {
@@ -4471,7 +4481,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_026_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[27] = {
 				[1] = {
@@ -4643,7 +4653,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_027_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
 			},
 			[28] = {
 				[1] = {
@@ -4815,9 +4825,191 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_F_HAIR_028_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
+				[18] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 443322889,
+					['hash_dec_signed'] = 443322889,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
 			},
 			[29] = {
+				[1] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 220739303,
+					['hash_dec_signed'] = 220739303,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[2] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 399163876,
+					['hash_dec_signed'] = 399163876,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[3] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 583643232,
+					['hash_dec_signed'] = 583643232,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[4] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 725774568,
+					['hash_dec_signed'] = 725774568,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[5] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 897268394,
+					['hash_dec_signed'] = 897268394,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[6] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1974164344,
+					['hash_dec_signed'] = 1974164344,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[7] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2239733500,
+					['hash_dec_signed'] = -2055233796,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[8] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2742847919,
+					['hash_dec_signed'] = -1552119377,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[9] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2804631008,
+					['hash_dec_signed'] = -1490336288,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[10] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2981680891,
+					['hash_dec_signed'] = -1313286405,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[11] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3069021694,
+					['hash_dec_signed'] = -1225945602,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[12] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3242080706,
+					['hash_dec_signed'] = -1052886590,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[13] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3349445404,
+					['hash_dec_signed'] = -945521892,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[14] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3381770942,
+					['hash_dec_signed'] = -913196354,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[15] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3428555671,
+					['hash_dec_signed'] = -866411625,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[16] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3557584251,
+					['hash_dec_signed'] = -737383045,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[17] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3607322698,
+					['hash_dec_signed'] = -687644598,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+			},
+			[30] = {
 				[1] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
@@ -4842,103 +5034,13 @@ hairs_list = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
-					['hash'] = 202244428,
-					['hash_dec_signed'] = 202244428,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[4] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 220739303,
-					['hash_dec_signed'] = 220739303,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[5] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 399163876,
-					['hash_dec_signed'] = 399163876,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[6] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 443322889,
-					['hash_dec_signed'] = 443322889,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[7] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 548874910,
-					['hash_dec_signed'] = 548874910,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[8] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 583643232,
-					['hash_dec_signed'] = 583643232,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				-- [9] = {
-				-- 	['category_hash'] = 2253063086,
-				-- 	['category_hash_dec_signed'] = -2041904210,
-				-- 	['category_hashname'] = 'hair',
-				-- 	['hash'] = 711198082,
-				-- 	['hash_dec_signed'] = 711198082,
-				-- 	['hashname'] = '',
-				-- 	['is_multiplayer'] = true,
-				-- 	['ped_type'] = 'female'
-				-- },
-				[9] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
 					['hash'] = 724255336,
 					['hash_dec_signed'] = 724255336,
 					['hashname'] = '',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[10] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 725774568,
-					['hash_dec_signed'] = 725774568,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[11] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 897268394,
-					['hash_dec_signed'] = 897268394,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[12] = {
+				[4] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -4948,7 +5050,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[13] = {
+				[5] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -4958,17 +5060,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[14] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1112305096,
-					['hash_dec_signed'] = 1112305096,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[15] = {
+				[6] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -4978,7 +5070,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[16] = {
+				[7] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -4988,47 +5080,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[17] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1687567099,
-					['hash_dec_signed'] = 1687567099,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				-- [19] = {
-				-- 	['category_hash'] = 2253063086,
-				-- 	['category_hash_dec_signed'] = -2041904210,
-				-- 	['category_hashname'] = 'hair',
-				-- 	['hash'] = 1908378966,
-				-- 	['hash_dec_signed'] = 1908378966,
-				-- 	['hashname'] = '',
-				-- 	['is_multiplayer'] = true,
-				-- 	['ped_type'] = 'female'
-				-- },
-				[18] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1974164344,
-					['hash_dec_signed'] = 1974164344,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[19] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2025151129,
-					['hash_dec_signed'] = 2025151129,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[20] = {
+				[8] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5038,7 +5090,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[21] = {
+				[9] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5048,17 +5100,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[22] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2239733500,
-					['hash_dec_signed'] = -2055233796,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[23] = {
+				[10] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5068,17 +5110,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				-- [26] = {
-				-- 	['category_hash'] = 2253063086,
-				-- 	['category_hash_dec_signed'] = -2041904210,
-				-- 	['category_hashname'] = 'hair',
-				-- 	['hash'] = 2403543248,
-				-- 	['hash_dec_signed'] = -1891424048,
-				-- 	['hashname'] = '',
-				-- 	['is_multiplayer'] = true,
-				-- 	['ped_type'] = 'female'
-				-- },
-				[24] = {
+				[11] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5088,57 +5120,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[25] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2742847919,
-					['hash_dec_signed'] = -1552119377,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[26] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2804631008,
-					['hash_dec_signed'] = -1490336288,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[27] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2981680891,
-					['hash_dec_signed'] = -1313286405,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[28] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3069021694,
-					['hash_dec_signed'] = -1225945602,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				-- [32] = {
-				-- 	['category_hash'] = 2253063086,
-				-- 	['category_hash_dec_signed'] = -2041904210,
-				-- 	['category_hashname'] = 'hair',
-				-- 	['hash'] = 3078041512,
-				-- 	['hash_dec_signed'] = -1216925784,
-				-- 	['hashname'] = '',
-				-- 	['is_multiplayer'] = true,
-				-- 	['ped_type'] = 'female'
-				-- },
-				[29] = {
+				[12] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5148,37 +5130,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[30] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3242080706,
-					['hash_dec_signed'] = -1052886590,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[31] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3349445404,
-					['hash_dec_signed'] = -945521892,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[32] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3381770942,
-					['hash_dec_signed'] = -913196354,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[33] = {
+				[13] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5188,17 +5140,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[34] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3428555671,
-					['hash_dec_signed'] = -866411625,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[35] = {
+				[14] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5208,27 +5150,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[36] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3557584251,
-					['hash_dec_signed'] = -737383045,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[37] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3607322698,
-					['hash_dec_signed'] = -687644598,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'female'
-				},
-				[38] = {
+				[15] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5238,7 +5160,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[39] = {
+				[16] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5248,7 +5170,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
 				},
-				[40] = {
+				[17] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -5257,7 +5179,91 @@ hairs_list = {
 					['hashname'] = '',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'female'
-				}
+				},
+			},
+			[31] = {
+				[1] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 202244428,
+					['hash_dec_signed'] = 202244428,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[2] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 548874910,
+					['hash_dec_signed'] = 548874910,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[3] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1112305096,
+					['hash_dec_signed'] = 1112305096,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[4] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2025151129,
+					['hash_dec_signed'] = 2025151129,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+			},
+			[32] = {
+				[1] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 0x2A640582,
+					['hash_dec_signed'] = 711198082,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[2] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 0x71BF8D56,
+					['hash_dec_signed'] = 1908378966,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[3] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 0x8F4328D0,
+					['hash_dec_signed'] = -1891424048,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
+				[4] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 0xB7772FA8,
+					['hash_dec_signed'] = -1216925784,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'female'
+				},
 			}
 		}
 	},
@@ -5615,7 +5621,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_002_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[3] = {
 				[1] = {
@@ -5787,7 +5793,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_003_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[4] = {
 				[1] = {
@@ -5959,7 +5965,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_004_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[5] = {
 				[1] = {
@@ -6131,7 +6137,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_005_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[6] = {
 				[1] = {
@@ -6303,7 +6309,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_006_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[7] = {
 				[1] = {
@@ -6475,7 +6481,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_007_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[8] = {
 				[1] = {
@@ -6647,7 +6653,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_008_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[9] = {
 				[1] = {
@@ -7011,7 +7017,7 @@ hairs_list = {
 					['hashname'] = '',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[11] = {
 				[1] = {
@@ -7183,7 +7189,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_011_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[12] = {
 				[1] = {
@@ -7355,7 +7361,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_012_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[13] = {
 				[1] = {
@@ -7527,7 +7533,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_013_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[14] = {
 				[1] = {
@@ -7699,7 +7705,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_014_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[15] = {
 				[1] = {
@@ -7871,7 +7877,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_015_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[16] = {
 				[1] = {
@@ -8043,7 +8049,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_016_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[17] = {
 				[1] = {
@@ -8215,7 +8221,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_017_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[18] = {
 				[1] = {
@@ -8387,7 +8393,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_018_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[19] = {
 				[1] = {
@@ -8559,7 +8565,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_019_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[20] = {
 				[1] = {
@@ -8731,7 +8737,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_020_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[21] = {
 				[1] = {
@@ -8903,7 +8909,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_021_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[22] = {
 				[1] = {
@@ -9075,7 +9081,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_022_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[23] = {
 				[1] = {
@@ -9247,7 +9253,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_BEARD_023_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[24] = {
 				[1] = {
@@ -9604,7 +9610,17 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_001_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
+				[18] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3414739370,
+					['hash_dec_signed'] = -880227926,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
 			},
 			[2] = {
 				[1] = {
@@ -9776,7 +9792,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_002_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[3] = {
 				[1] = {
@@ -9948,7 +9964,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_003_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[4] = {
 				[1] = {
@@ -10120,7 +10136,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_004_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[5] = {
 				[1] = {
@@ -10292,7 +10308,17 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_005_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
+				[18] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 994536690,
+					['hash_dec_signed'] = 994536690,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
 			},
 			[6] = {
 				[1] = {
@@ -10464,7 +10490,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_006_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[7] = {
 				[1] = {
@@ -10636,7 +10662,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_007_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[8] = {
 				[1] = {
@@ -10808,7 +10834,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_008_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[9] = {
 				[1] = {
@@ -10980,7 +11006,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_009_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[10] = {
 				[1] = {
@@ -11152,7 +11178,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_010_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[11] = {
 				[1] = {
@@ -11324,7 +11350,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_011_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[12] = {
 				[1] = {
@@ -11496,7 +11522,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_012_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[13] = {
 				[1] = {
@@ -11668,7 +11694,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_013_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[14] = {
 				[1] = {
@@ -11840,7 +11866,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_014_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[15] = {
 				[1] = {
@@ -12012,7 +12038,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_015_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[16] = {
 				[1] = {
@@ -12184,7 +12210,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_016_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[17] = {
 				[1] = {
@@ -12356,7 +12382,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_017_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[18] = {
 				[1] = {
@@ -12528,7 +12554,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_018_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[19] = {
 				[1] = {
@@ -12700,7 +12726,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_019_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[20] = {
 				[1] = {
@@ -12872,7 +12898,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_020_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[21] = {
 				[1] = {
@@ -13044,7 +13070,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_021_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[22] = {
 				[1] = {
@@ -13216,7 +13242,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_022_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[23] = {
 				[1] = {
@@ -13388,7 +13414,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_023_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[24] = {
 				[1] = {
@@ -13560,7 +13586,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_024_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[25] = {
 				[1] = {
@@ -13732,7 +13758,7 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_025_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[26] = {
 				[1] = {
@@ -13904,9 +13930,181 @@ hairs_list = {
 					['hashname'] = 'CLOTHING_ITEM_M_HAIR_028_UNCLE_GREY',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
 			},
 			[27] = {
+				[1] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 685767930,
+					['hash_dec_signed'] = 685767930,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[2] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1134333556,
+					['hash_dec_signed'] = 1134333556,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[3] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1236989883,
+					['hash_dec_signed'] = 1236989883,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[4] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1327556610,
+					['hash_dec_signed'] = 1327556610,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[5] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1712720578,
+					['hash_dec_signed'] = 1712720578,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[6] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1766804827,
+					['hash_dec_signed'] = 1766804827,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[7] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2211514444,
+					['hash_dec_signed'] = -2083452852,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[8] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2547609907,
+					['hash_dec_signed'] = -1747357389,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[9] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2706041597,
+					['hash_dec_signed'] = -1588925699,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[10] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 2965455503,
+					['hash_dec_signed'] = -1329511793,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[11] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3186428748,
+					['hash_dec_signed'] = -1108538548,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[12] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3342711908,
+					['hash_dec_signed'] = -952255388,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[13] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3367046862,
+					['hash_dec_signed'] = -927920434,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[14] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3527780349,
+					['hash_dec_signed'] = -767186947,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[15] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3899900424,
+					['hash_dec_signed'] = -395066872,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[16] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3925546859,
+					['hash_dec_signed'] = -369420437,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[17] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 3981639676,
+					['hash_dec_signed'] = -313327620,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+			},
+			[28] = {
 				[1] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
@@ -13941,93 +14139,13 @@ hairs_list = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
-					['hash'] = 516967315,
-					['hash_dec_signed'] = 516967315,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[5] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
 					['hash'] = 591398697,
 					['hash_dec_signed'] = 591398697,
 					['hashname'] = '',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[6] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 685767930,
-					['hash_dec_signed'] = 685767930,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[7] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 740714047,
-					['hash_dec_signed'] = 740714047,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[8] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 994536690,
-					['hash_dec_signed'] = 994536690,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[9] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1134333556,
-					['hash_dec_signed'] = 1134333556,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[10] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1236989883,
-					['hash_dec_signed'] = 1236989883,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[11] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1327556610,
-					['hash_dec_signed'] = 1327556610,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[12] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1353658196,
-					['hash_dec_signed'] = 1353658196,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[13] = {
+				[5] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14037,7 +14155,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[14] = {
+				[6] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14047,7 +14165,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[15] = {
+				[7] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14057,27 +14175,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[16] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1712720578,
-					['hash_dec_signed'] = 1712720578,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[17] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 1766804827,
-					['hash_dec_signed'] = 1766804827,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[18] = {
+				[8] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14087,17 +14185,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[19] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2211514444,
-					['hash_dec_signed'] = -2083452852,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[20] = {
+				[9] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14107,7 +14195,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[21] = {
+				[10] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14117,7 +14205,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[22] = {
+				[11] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14127,37 +14215,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[23] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2547609907,
-					['hash_dec_signed'] = -1747357389,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[24] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2706041597,
-					['hash_dec_signed'] = -1588925699,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[25] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 2965455503,
-					['hash_dec_signed'] = -1329511793,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[26] = {
+				[12] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14167,57 +14225,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[27] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3186428748,
-					['hash_dec_signed'] = -1108538548,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[28] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3342711908,
-					['hash_dec_signed'] = -952255388,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[29] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3367046862,
-					['hash_dec_signed'] = -927920434,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[30] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3414739370,
-					['hash_dec_signed'] = -880227926,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[31] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3527780349,
-					['hash_dec_signed'] = -767186947,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[32] = {
+				[13] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14227,7 +14235,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[33] = {
+				[14] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14237,7 +14245,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[34] = {
+				[15] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14247,47 +14255,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[35] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3899900424,
-					['hash_dec_signed'] = -395066872,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[36] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3925546859,
-					['hash_dec_signed'] = -369420437,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[37] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 3981639676,
-					['hash_dec_signed'] = -313327620,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[38] = {
-					['category_hash'] = 2253063086,
-					['category_hash_dec_signed'] = -2041904210,
-					['category_hashname'] = 'hair',
-					['hash'] = 4012829781,
-					['hash_dec_signed'] = -282137515,
-					['hashname'] = '',
-					['is_multiplayer'] = true,
-					['ped_type'] = 'male'
-				},
-				[39] = {
+				[16] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14297,7 +14265,7 @@ hairs_list = {
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
 				},
-				[40] = {
+				[17] = {
 					['category_hash'] = 2253063086,
 					['category_hash_dec_signed'] = -2041904210,
 					['category_hashname'] = 'hair',
@@ -14306,7 +14274,49 @@ hairs_list = {
 					['hashname'] = '',
 					['is_multiplayer'] = true,
 					['ped_type'] = 'male'
-				}
+				},
+			},
+			[29] = {
+				[1] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 516967315,
+					['hash_dec_signed'] = 516967315,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[2] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 740714047,
+					['hash_dec_signed'] = 740714047,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[3] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 1353658196,
+					['hash_dec_signed'] = 1353658196,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
+				[4] = {
+					['category_hash'] = 2253063086,
+					['category_hash_dec_signed'] = -2041904210,
+					['category_hashname'] = 'hair',
+					['hash'] = 4012829781,
+					['hash_dec_signed'] = -282137515,
+					['hashname'] = '',
+					['is_multiplayer'] = true,
+					['ped_type'] = 'male'
+				},
 			}
 		}
 	}
