@@ -7,7 +7,7 @@ LoadedComponents = {}
 CreatorCache = {}
 local SpawnedPeds = {}
 MenuData = {}
-TriggerEvent("rdr_menu:getData", function(call)
+TriggerEvent("redemrp_menu_base:getData", function(call)
     MenuData = call
 end)
 
