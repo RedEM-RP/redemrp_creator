@@ -48,7 +48,7 @@ Citizen.CreateThread(function()
             PromptGroup:HideAll()
             CraftPrompt:Enabled(false)
             print("Surgeon prompt hidden")
-            TriggerEvent("redemrp_menu_base:getData", function(call)
+            TriggerEvent("redemrp_creator_menu:getData", function(call)
                 call.CloseAll()
             end)
         end
