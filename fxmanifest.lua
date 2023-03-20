@@ -4,15 +4,15 @@ games { 'rdr3' }
 
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
 
+
 client_scripts {
-	'utils/hairs.lua',
+  'utils/hairs.lua',
 	'utils/cloth_hash_names.lua',
 	'utils/overlays.lua',
 	'utils/features.lua',
 	'utils/functions.lua',
 	'utils/menu.lua',
-
-    'client/main.lua',
+  'client/main.lua',
 }
 
 server_scripts {
@@ -25,7 +25,7 @@ ui_page {
 }
 
 files {
-	'img/*.png',
+  'img/*.png',
 	'html/ui.html',
 	'html/*.png',
 	'html/css/app.css',
