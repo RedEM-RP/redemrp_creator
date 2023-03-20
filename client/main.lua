@@ -7,7 +7,7 @@ LoadedComponents = {}
 CreatorCache = {}
 local SpawnedPeds = {}
 MenuData = {}
-TriggerEvent("redemrp_creator_menu:getData", function(call)
+TriggerEvent("redemrp_menu_base:getData", function(call)
     MenuData = call
 end)
 
@@ -204,7 +204,6 @@ AddEventHandler('RedEM:client:ApplySkin', function(SkinData, Target, ClothesData
         print("Loading...")
         -- print(_Target, PlayerPedId())
         FixIssues(_Target, _SkinData)
-        LoadHeight(_Target, _SkinData)
         LoadBody(_Target, _SkinData)
         LoadHead(_Target, _SkinData)
         LoadHair(_Target, _SkinData)
@@ -214,6 +213,7 @@ AddEventHandler('RedEM:client:ApplySkin', function(SkinData, Target, ClothesData
         LoadBodySize(_Target, _SkinData)
         LoadBodyWaist(_Target, _SkinData)
         LoadOverlays(_Target, _SkinData)
+        LoadHeight(_Target, _SkinData)
         TriggerServerEvent("redemrp_respawn:TestDeathStatus")
         SetEntityAlpha(_Target, 255)
         TriggerEvent("rdr_creator:SkinLoaded", _SkinData, _Target, ClothesData)
@@ -265,7 +265,6 @@ RegisterNetEvent('RedEM:client:ApplySkinCommand', function(SkinData, Target, Clo
             print("Loading...")
             -- print(_Target, PlayerPedId())
             FixIssues(_Target, _SkinData)
-            LoadHeight(_Target, _SkinData)
             LoadBody(_Target, _SkinData)
             LoadHead(_Target, _SkinData)
             LoadHair(_Target, _SkinData)
@@ -275,6 +274,7 @@ RegisterNetEvent('RedEM:client:ApplySkinCommand', function(SkinData, Target, Clo
             LoadBodySize(_Target, _SkinData)
             LoadBodyWaist(_Target, _SkinData)
             LoadOverlays(_Target, _SkinData)
+            LoadHeight(_Target, _SkinData)
             TriggerServerEvent("redemrp_respawn:TestDeathStatus")
             SetEntityAlpha(_Target, 255)
             TriggerEvent("rdr_creator:SkinLoaded", _SkinData, _Target, ClothesData)
@@ -409,6 +409,11 @@ function OpenBodyMenu()
     for i, v in ipairs(WAIST_TYPES) do
         table.insert(BodyWaistOptions, "+ " .. (i / 2) .. " kg")
     end
+
+    local HeightOptions = {}
+    for i=88,106 do
+        table.insert(HeightOptions, i.."")
+    end
     local SkinToneOptions = {"<img src='nui://redemrp_creator/img/skin1.png' height='20'>",
                              "<img src='nui://redemrp_creator/img/skin2.png' height='20'>",
                              "<img src='nui://redemrp_creator/img/skin3.png' height='20'>",
@@ -462,12 +467,13 @@ function OpenBodyMenu()
         options = BodyWaistOptions
     }, {
         label = "Height",
-        value = CreatorCache["height"] or 100,
+        value = CreatorCache["height"] or 94,
         category = "height",
         desc = "Change height",
         type = "slider",
-        min = 80,
-        max = 105,
+        min = 88,
+        max = 106,
+        options = HeightOptions
     }}
 
     MenuData.Open('default', GetCurrentResourceName(), 'body_character_creator_menu', {
