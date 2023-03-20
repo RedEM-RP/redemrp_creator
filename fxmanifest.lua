@@ -5,7 +5,6 @@ games { 'rdr3' }
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
 
 client_scripts {
-	-- 'utils/creator_prompts.lua', -- Disabled untill fix
 	'utils/hairs.lua',
 	'utils/cloth_hash_names.lua',
 	'utils/overlays.lua',
@@ -13,12 +12,12 @@ client_scripts {
 	'utils/functions.lua',
 	'utils/menu.lua',
 
-    'client/cl_main.lua',
+    'client/main.lua',
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',    
-    'server/sv_main.lua',
+    'server/main.lua',
 }
 
 ui_page {
