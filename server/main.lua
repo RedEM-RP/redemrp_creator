@@ -65,7 +65,8 @@ RegisterServerEvent('RedEM:server:LoadSkin', function(isCommand)
 end)
 
 RegisterServerEvent('rdr_creator:SetPlayerBucket', function(b)
-    SetPlayerRoutingBucket(source, b)
+    local _source = source
+    SetPlayerRoutingBucket(_source, _source)
 end)
 
 RegisterServerEvent("RedEM:server:DeleteSkin", function(charid)
