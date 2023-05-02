@@ -12,6 +12,11 @@ local cam
 local CharacterCreatorCamera
 
 local ChoiceGroup = GetRandomIntInRange(0, 0xffffff)
+
+local alltempt = {
+    peds = {}
+}
+local tempPrompt = {}
 -- print('ChoiceGroup: ' .. ChoiceGroup)
 
 function ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id,
@@ -112,11 +117,13 @@ function SpawnPeds()
     end
 
     SpawnedPeds[1] = CreatePed(maleHash, SpawnCoords[1], 102.0, true, true, 0, 0)
+    table.insert(alltempt.peds, SpawnedPeds[1])
     while not DoesEntityExist(SpawnedPeds[1]) do
         Wait(1)
     end
 
     SpawnedPeds[2] = CreatePed(femaleHash, SpawnCoords[2], 102.0, true, true, 0, 0)
+    table.insert(alltempt.peds, SpawnedPeds[2])
     while not DoesEntityExist(SpawnedPeds[2]) do
         Wait(1)
     end
@@ -147,64 +154,63 @@ function SpawnPeds()
     return SpawnedPeds
 end
 
+function deleteTemps()
+    for k,l in pairs(alltempt.peds) do
+        DeleteEntity(l)
+    end
+    if tempPrompt then
+        for k,l in pairs(tempPrompt)do
+            PromptDelete(l)
+        end
+    end
+end
+
 function DeletePeds(SpawnedPeds)
     for i = 1, 2 do
         DeleteEntity(SpawnedPeds[i])
     end
 end
 
-function StartRightPrompt()
-    Citizen.CreateThread(function()
-        local str = "Right"
-        PromptRight = PromptRegisterBegin()
-        PromptSetControlAction(PromptRight, 0xDEB34313)
-        str = CreateVarString(10, 'LITERAL_STRING', str)
-        PromptSetText(PromptRight, str)
-        PromptSetEnabled(PromptRight, true)
-        PromptSetVisible(PromptRight, true)
-        PromptSetHoldMode(PromptRight, true)
-        PromptSetGroup(PromptRight, ChoiceGroup)
-        PromptRegisterEnd(PromptRight)
+function promptCreator(data)
+    local _str,button,holdmode,group = data.str,data.button,data.holdmode,data.group
+	local promptr = PromptRegisterBegin()
+	if type(button) == "table" then
+		for k,l in pairs(button)do
+			PromptSetControlAction(promptr, l)
+		end
+	else
+		PromptSetControlAction(promptr, button)
+	end
+	local str = CreateVarString(10, 'LITERAL_STRING', _str)
+	PromptSetText(promptr, str)
+	PromptSetEnabled(promptr, true)
+	PromptSetVisible(promptr, true)
+	PromptSetPriority(promptr, 1)
+	PromptSetStandardMode(promptr, true)
+	local mode = true
+	if holdmode ~= nil then
+		mode = holdmode
+		if mode == false then
+			PromptSetStandardMode(promptr, not mode)
+			PromptSetEnabled(promptr, not mode)
+		else
+			PromptSetHoldMode(promptr, mode)
+			PromptSetEnabled(promptr, mode)
+		end
+	else
+		PromptSetHoldMode(promptr, mode)
+		PromptSetEnabled(promptr, true)
+	end
 
-    end)
+    if group then
+        PromptSetGroup(promptr, group)
+    else
+        PromptSetPosition(promptr,0,0,0)
+    end
+	PromptRegisterEnd(promptr)
+	table.insert(tempPrompt,promptr)
+	return promptr
 end
-
-function StartLeftPrompt()
-    Citizen.CreateThread(function()
-        local str = "Left"
-        PromptLeft = PromptRegisterBegin()
-        PromptSetControlAction(PromptLeft, 0xA65EBAB4)
-        str = CreateVarString(10, 'LITERAL_STRING', str)
-        PromptSetText(PromptLeft, str)
-        PromptSetEnabled(PromptLeft, true)
-        PromptSetVisible(PromptLeft, true)
-        PromptSetHoldMode(PromptLeft, true)
-        PromptSetGroup(PromptLeft, ChoiceGroup)
-        PromptRegisterEnd(PromptLeft)
-
-    end)
-end
-
-function StartAcceptPrompt()
-    Citizen.CreateThread(function()
-        local str = "Accept"
-        PromptAccept = PromptRegisterBegin()
-        PromptSetControlAction(PromptAccept, 0x2CD5343E)
-        str = CreateVarString(10, 'LITERAL_STRING', str)
-        PromptSetText(PromptAccept, str)
-        PromptSetEnabled(PromptAccept, true)
-        PromptSetVisible(PromptAccept, true)
-        PromptSetHoldMode(PromptAccept, true)
-        PromptSetGroup(PromptAccept, ChoiceGroup)
-        PromptRegisterEnd(PromptAccept)
-
-    end)
-end
-Citizen.CreateThread(function()
-    StartRightPrompt()
-    StartLeftPrompt()
-    StartAcceptPrompt()
-end)
 
 function StartSelectCam()
     DoScreenFadeOut(1000)
@@ -223,6 +229,20 @@ function StartSelectCam()
 end
 
 function LightAndCam()
+    local left = 0xA65EBAB4
+    local right = 0xDEB34313
+    local accept = 0x2CD5343E
+    local data = {        
+        str = "Select",
+        button = {left,right},
+        holdmode = false,
+    }
+    left_right = promptCreator(data)
+    data.str = "Accept"
+    data.button = accept
+    accept = promptCreator(data)
+    PromptSetVisible(left_right,true)
+    PromptSetVisible(accept,true)
     while cam do
         Wait(0)
         DrawLightWithRange(-561.36, SpawnCoords[AcitveCamera].y, SpawnCoords[AcitveCamera].z + 1, 255, 255, 255, 5.5,
@@ -231,24 +251,25 @@ function LightAndCam()
             Citizen.ResultAsLong())
         Citizen.InvokeNative(0xFA233F8FE190514C, SelectString)
         Citizen.InvokeNative(0xE9990552DEC71600)
-        local ChoiceGroupName = CreateVarString(10, 'LITERAL_STRING', "Choose")
-        PromptSetActiveGroupThisFrame(ChoiceGroup, ChoiceGroupName)
-        if PromptHasHoldModeCompleted(PromptLeft) then
-            if AcitveCamera ~= 1 then
-                AcitveCamera = 1
-                MoveSelectCamera(CameraCoords[1])
+        if PromptIsReleased(left_right) then
+            if IsControlJustReleased(0,left) then
+                if AcitveCamera ~= 1 then
+                    AcitveCamera = 1
+                    MoveSelectCamera(CameraCoords[1])
+                end
+            elseif IsControlJustReleased(0,right) then
+                if AcitveCamera ~= 2 then
+                    AcitveCamera = 2
+                    MoveSelectCamera(CameraCoords[2])
+                end
             end
         end
-        if PromptHasHoldModeCompleted(PromptRight) then
-            if AcitveCamera ~= 2 then
-                AcitveCamera = 2
-                MoveSelectCamera(CameraCoords[2])
-            end
-        end
-        if PromptHasHoldModeCompleted(PromptAccept) then
+        if PromptIsReleased(accept) then
             StartCharacterCreatorCamera()
         end
     end
+    PromptDelete(left_right)
+    PromptDelete(accept)
     local blank = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", " ", Citizen.ResultAsLong())
     Citizen.InvokeNative(0xFA233F8FE190514C, blank)
     Citizen.InvokeNative(0xE9990552DEC71600)
