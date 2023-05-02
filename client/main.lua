@@ -330,7 +330,7 @@ RegisterCommand('loadskin', function(source, args, raw)
 end)
 
 function StartCreator()
-    TriggerServerEvent("rdr_creator:SetPlayerBucket" , BucketId)
+    --TriggerServerEvent("rdr_creator:SetPlayerBucket" , BucketId)
     Wait(500)
     -- while not NetworkIsSessionStarted() do
     --     Wait(0)
@@ -1888,4 +1888,10 @@ end)
 
 exports('GetMaxTexturesForModel', function(category , model)
     return GetMaxTexturesForModel(category,model)
+end)
+
+AddEventHandler("onResourceStop", function(resource)
+    if resource == GetCurrentResourceName() then
+        deleteTemps()
+    end
 end)
