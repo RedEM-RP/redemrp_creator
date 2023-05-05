@@ -10,32 +10,6 @@ MenuData = {}
 TriggerEvent("redemrp_creator_menu:getData", function(call)
     MenuData = call
 end)
-
-local MainMenus = {
-    ["body"] = function()
-        OpenBodyMenu()
-    end,
-    ["face"] = function()
-        OpenFaceMenu()
-    end,
-    ["hair"] = function()
-        OpenHairMenu()
-    end,
-    ["makeup"] = function()
-        OpenMakeupMenu()
-    end,
-    ["save"] = function()
-		TriggerServerEvent("rdr_creator:SetPlayerBucket" , 0)
-        -- if NetworkIsInTutorialSession() then
-        --     NetworkEndTutorialSession()
-        -- end
-        EndCharacterCreatorCam()
-        MenuData.CloseAll()
-        LoadedComponents = CreatorCache
-        TriggerServerEvent("rdr_creator:SaveSkin", CreatorCache)
-        TriggerEvent("redemrp_respawn:respawn", true)
-    end
-}
 local BodyFunctions = {
     ["head"] = function(target, data)
         -- print("test")
@@ -154,6 +128,91 @@ local EyebrowsFunctions = {
     end
 }
 
+
+local MainMenus = {
+    ["body"] = function()
+        OpenBodyMenu()
+    end,
+    ["face"] = function()
+        OpenFaceMenu()
+    end,
+    ["hair"] = function()
+        OpenHairMenu()
+    end,
+    ["makeup"] = function()
+        OpenMakeupMenu()
+    end,
+    ["random"] = function()
+        local sex = "female"
+        if IsPedMale(PlayerPedId()) then sex = "male" end
+        for k,l in pairs(maxList)do
+            if k == "hair" then
+                l.max = #hairs_list[sex]["hair"] or 0
+            end
+            if k == "beard" and sex =="male" then
+                l.max = #hairs_list[sex]["beard"] or 0
+            elseif k == "beard" and sex =="female" then
+                return
+            end
+            local randomIndex = math.random(l.min,l.max)
+            if CreatorCache[k] ~= randomIndex then
+                if k == "hair" then
+                    if CreatorCache["hair"] == nil or type(CreatorCache["hair"]) ~= "table" then
+                        CreatorCache["hair"] = {}
+                        CreatorCache["hair"].model = 0
+                        CreatorCache["hair"].texture = 1
+                    end
+                    CreatorCache["hair"].model = randomIndex
+                    local color = GetMaxTexturesForModel("hair", CreatorCache["hair"].model or 1)
+                    local colorindex = math.random(l.min,color)
+                    CreatorCache["hair"].texture = colorindex
+                elseif k == "beard" then
+                    if CreatorCache["beard"] == nil or type(CreatorCache["beard"]) ~= "table" then
+                        CreatorCache["beard"] = {}
+                        CreatorCache["beard"].model = 0
+                        CreatorCache["beard"].texture = 1
+                    end
+                    CreatorCache["beard"].model = randomIndex
+                    local color = GetMaxTexturesForModel("beard", CreatorCache["beard"].model or 1)
+                    local colorindex = math.random(l.min,color)
+                    CreatorCache["beard"].texture = colorindex
+                else
+                    CreatorCache[k] = randomIndex
+                end
+                if BodyFunctions[k] then
+                    BodyFunctions[k](PlayerPedId(), CreatorCache)
+                end
+                if FaceFunctions[k] then
+                    FaceFunctions[k](PlayerPedId(), CreatorCache)
+                end
+                if HairFunctions[k] then
+                    HairFunctions[k](PlayerPedId(), CreatorCache)
+                end
+                if EyesFunctions[k] then
+                    EyesFunctions[k](PlayerPedId(), CreatorCache)
+                end
+                if EyelidsFunctions[k] then
+                    EyelidsFunctions[k](PlayerPedId(), CreatorCache)
+                end
+                if EyebrowsFunctions[k] then
+                    EyebrowsFunctions[k](PlayerPedId(), CreatorCache)
+                end
+            end
+        end
+    end,
+    ["save"] = function()
+		TriggerServerEvent("rdr_creator:SetPlayerBucket" , 0)
+        -- if NetworkIsInTutorialSession() then
+        --   NetworkEndTutorialSession()
+        -- end
+        EndCharacterCreatorCam()
+        MenuData.CloseAll()
+        LoadedComponents = CreatorCache
+        TriggerServerEvent("rdr_creator:SaveSkin", CreatorCache)
+        TriggerEvent("redemrp_respawn:respawn", true)
+        CreatorCache = {}
+    end
+}
 Citizen.CreateThread(function()
     for i, v in pairs(cloth_hash_names) do
         if v.category_hashname == "BODIES_LOWER" or v.category_hashname == "BODIES_UPPER" or v.category_hashname ==
@@ -240,7 +299,7 @@ AddEventHandler('RedEM:client:ApplySkin', function(SkinData, Target, ClothesData
                     opacity = 0.0
                 }
             end
-        end  
+        end
     end)
 end)
 
@@ -304,7 +363,7 @@ RegisterNetEvent('RedEM:client:ApplySkinCommand', function(SkinData, Target, Clo
             end
         else
             RedEM.Functions.NotifyRight("You can only use this command once every 3 seconds!", 3000)
-        end  
+        end
     end)
 end)
 
@@ -330,10 +389,10 @@ RegisterCommand('loadskin', function(source, args, raw)
 end)
 
 function StartCreator()
-    --TriggerServerEvent("rdr_creator:SetPlayerBucket" , BucketId)
+    TriggerServerEvent("rdr_creator:SetPlayerBucket")
     Wait(500)
     -- while not NetworkIsSessionStarted() do
-    --     Wait(0)
+    --   Wait(0)
     -- end
     for i, m in pairs(overlay_all_layers) do
         overlay_all_layers[i] = {
@@ -355,6 +414,8 @@ function StartCreator()
     end
     -- NetworkStartSoloTutorialSession()
     MenuData.CloseAll()
+    DestroyAllCams()
+    SetEntityCoords(PlayerPedId(), -563.99, -3776.72, 237.60)
     SpawnedPeds = SpawnPeds()
     local selectedSex = StartSelectCam()
     CreatorCache["sex"] = selectedSex
@@ -369,27 +430,38 @@ end
 
 function MainMenu()
     MenuData.CloseAll()
-    local elements = {{
+    local elements = {
+        {
         label = "Body",
         value = 'body',
         desc = "Edit your body"
-    }, {
-        label = "Face",
-        value = 'face',
-        desc = "Edit your face"
-    }, {
-        label = "Hair / Beard",
-        value = 'hair',
-        desc = "Edit your hair"
-    }, {
-        label = "Makeup",
-        value = 'makeup',
-        desc = "Edit your makeup"
-    }, {
-        label = "Save",
-        value = 'save',
-        desc = "Save your character"
-    }}
+        },
+        {
+            label = "Face",
+            value = 'face',
+            desc = "Edit your face"
+        },
+        {
+            label = "Hair / Beard",
+            value = 'hair',
+            desc = "Edit your hair"
+        },
+        {
+            label = "Makeup",
+            value = 'makeup',
+            desc = "Edit your makeup"
+        },
+        {
+            label = "Random",
+            value = 'random',
+            desc = "Select Random"
+        },
+        {
+            label = "Save",
+            value = 'save',
+            desc = "Save your character"
+        }
+    }
 
     MenuData.Open('default', GetCurrentResourceName(), 'main_character_creator_menu', {
         title = 'Basic Appearance',
@@ -468,7 +540,13 @@ function OpenBodyMenu()
         type = "slider",
         min = 80,
         max = 105,
-    }}
+    },
+    {
+        label = "Random",
+        value = 'random',
+        desc = "Select Random"
+    }
+}
 
     MenuData.Open('default', GetCurrentResourceName(), 'body_character_creator_menu', {
         title = 'Basic Appearance',
@@ -476,11 +554,26 @@ function OpenBodyMenu()
         align = 'top-left',
         elements = elements
     }, function(data, menu)
-
+        if data.current.value == "random" then
+            for k,l in pairs(data.elements)do
+                if l.category then
+                    local randomIndex = math.random(maxList[l.category].min,maxList[l.category].max) or 0
+                    if CreatorCache[l.category] ~= randomIndex then
+                        CreatorCache[l.category] = randomIndex
+                        if BodyFunctions[l.category] then
+                            BodyFunctions[l.category](PlayerPedId(), CreatorCache)
+                            data.elements[k].value = randomIndex
+                        end
+                    end
+                end
+            end
+            menu.setElements(data.elements)
+            menu.refresh()
+        end
     end, function(data, menu)
         MainMenu()
     end, function(data, menu)
-        if CreatorCache[data.current.category] ~= data.current.value then
+        if data.current.category and CreatorCache[data.current.category] ~= data.current.value then
             CreatorCache[data.current.category] = data.current.value
             BodyFunctions[data.current.category](PlayerPedId(), CreatorCache)
         end
@@ -568,7 +661,6 @@ function OpenHairMenu2(cb)
                 CreatorCache["beard"].model = 0
                 -- print(CreatorCache["beard"])
                 CreatorCache["beard"].texture = 1
-                
             end
             local options = {}
             for k, v in pairs(category) do
@@ -731,7 +823,6 @@ function OpenHairMenu2(cb)
                         end
                     else
                         table.insert(options, "None")
-    
                     end
                     menu.setElement(data.current.id + 1, "options", options)
                     menu.setElement(data.current.id + 1, "max",
@@ -739,13 +830,11 @@ function OpenHairMenu2(cb)
                     menu.setElement(data.current.id + 1, "min", 1)
                     menu.setElement(data.current.id + 1, "value", 1)
                     menu.refresh()
-    
                 else
                     menu.setElement(data.current.id + 1, "max", 0)
                     menu.setElement(data.current.id + 1, "min", 0)
                     menu.setElement(data.current.id + 1, "value", 0)
                     menu.refresh()
-    
                 end
                 HairFunctions[data.current.category](PlayerPedId(), CreatorCache)
             end
@@ -785,7 +874,6 @@ function OpenHairMenu()
                 CreatorCache["beard"].model = 0
                 -- print(CreatorCache["beard"])
                 CreatorCache["beard"].texture = 1
-                
             end
             local options = {}
             for k, v in pairs(category) do
@@ -863,6 +951,11 @@ function OpenHairMenu()
 
             options = {}
             a = a + 1
+        table.insert(elements,{
+            label = "Random",
+            value = 'random',
+            desc = "Select Random"
+        })
     else
         local a = 1
         local category = hairs_list["female"]["hair"]
@@ -908,6 +1001,11 @@ function OpenHairMenu()
 
         options = {}
         a = a + 1
+        table.insert(elements,{
+            label = "Random",
+            value = 'random',
+            desc = "Select Random"
+        })
     end
     MenuData.Open('default', GetCurrentResourceName(), 'hair_main_character_creator_menu', {
         title = 'Hair',
@@ -915,13 +1013,65 @@ function OpenHairMenu()
         align = 'top-left',
         elements = elements
     }, function(data, menu)
+        if data.current.value == "random" then
+            local sex = "female"
+            if IsPedMale(PlayerPedId()) then sex = "male" end
+            for k,l in pairs(data.elements)do
+                if l.category then
+                    local max = 0
+                     if l.category == "hair" then
+                        max = #hairs_list[sex]["hair"] or 0
+                    end
+                    if l.category == "beard" and sex =="male" then
+                        max = #hairs_list[sex]["beard"] or 0
+                    elseif l.category == "beard" and sex =="female" then
+                        return
+                    end
+                    local randomIndex = math.random(maxList[l.category].min,max) or 0
+                    if l.category == "hair" then
+                        if CreatorCache["hair"] == nil or type(CreatorCache["hair"]) ~= "table" then
+                            CreatorCache["hair"] = {}
+                            CreatorCache["hair"].model = 0
+                            CreatorCache["hair"].texture = 1
+                        end
+                        CreatorCache["hair"].model = randomIndex
+                        local color = GetMaxTexturesForModel("hair", CreatorCache["hair"].model or 1)
+                        local colorindex = math.random(l.min,color)
+                        CreatorCache["hair"].texture = colorindex
+                        data.elements[k].options = options
+                        HairFunctions[l.category](PlayerPedId(), CreatorCache)
+                    elseif l.category == "beard" then
+                        if CreatorCache["beard"] == nil or type(CreatorCache["beard"]) ~= "table" then
+                            CreatorCache["beard"] = {}
+                            CreatorCache["beard"].model = 0
+                            CreatorCache["beard"].texture = 1
+                        end
+                        CreatorCache["beard"].model = randomIndex
+                        local color = GetMaxTexturesForModel("beard", CreatorCache["beard"].model or 1)
+                        local colorindex = math.random(l.min,color)
+                        CreatorCache["beard"].texture = colorindex
 
+                        local options = {}
+                        if GetMaxTexturesForModel(l.category, randomIndex) > 1 then
+                            for i = 1, GetMaxTexturesForModel(l.category, randomIndex), 1 do
+                                table.insert(options, "Color " .. i)
+                            end
+                        else
+                            table.insert(options, "None")
+                        end
+
+                        data.elements[k].options = options
+                        HairFunctions[l.category](PlayerPedId(), CreatorCache)
+                    end
+                end
+            end
+            menu.setElements(data.elements)
+            menu.refresh()
+        end
     end, function(data, menu)
         MoveCharacterCreatorCamera(-560.133, -3780.92, 238.6)
         MainMenu()
     end, function(data, menu)
-
-
         if data.current.change_type == "model" then
             if CreatorCache[data.current.category].model ~= data.current.value then
                 CreatorCache[data.current.category].texture = 1
@@ -935,21 +1085,17 @@ function OpenHairMenu()
                         end
                     else
                         table.insert(options, "None")
-    
                     end
                     menu.setElement(data.current.id + 1, "options", options)
-                    menu.setElement(data.current.id + 1, "max",
-                        GetMaxTexturesForModel(data.current.category, data.current.value))
+                    menu.setElement(data.current.id + 1, "max",GetMaxTexturesForModel(data.current.category, data.current.value))
                     menu.setElement(data.current.id + 1, "min", 1)
                     menu.setElement(data.current.id + 1, "value", 1)
                     menu.refresh()
-    
                 else
                     menu.setElement(data.current.id + 1, "max", 0)
                     menu.setElement(data.current.id + 1, "min", 0)
                     menu.setElement(data.current.id + 1, "value", 0)
                     menu.refresh()
-    
                 end
                 HairFunctions[data.current.category](PlayerPedId(), CreatorCache)
             end
@@ -960,7 +1106,7 @@ function OpenHairMenu()
                 HairFunctions[data.current.category](PlayerPedId(), CreatorCache)
             end
         else
-            if CreatorCache[data.current.category] ~= data.current.value then
+            if data.current.category and CreatorCache[data.current.category] ~= data.current.value then
                 CreatorCache[data.current.category] = data.current.value
                 HairFunctions[data.current.category](PlayerPedId(), CreatorCache)
             end
