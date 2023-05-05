@@ -104,6 +104,7 @@ function LoadModel(target, model)
 end
 
 function SpawnPeds()
+    deleteTemps()
     local SpawnedPeds = {}
     local maleHash = GetHashKey("mp_male")
     local femaleHash = GetHashKey("mp_female")
@@ -117,19 +118,15 @@ function SpawnPeds()
     end
 
     SpawnedPeds[1] = CreatePed(maleHash, SpawnCoords[1], 102.0, true, true, 0, 0)
-    table.insert(alltempt.peds, SpawnedPeds[1])
     while not DoesEntityExist(SpawnedPeds[1]) do
         Wait(1)
     end
 
     SpawnedPeds[2] = CreatePed(femaleHash, SpawnCoords[2], 102.0, true, true, 0, 0)
-    table.insert(alltempt.peds, SpawnedPeds[2])
     while not DoesEntityExist(SpawnedPeds[2]) do
         Wait(1)
     end
-
     for i = 1, 2 do
-
         NetworkSetEntityInvisibleToNetwork(SpawnedPeds[i], true)
         SetEntityAsMissionEntity(SpawnedPeds[i], true, true)
         Citizen.InvokeNative(0x283978A15512B2FE, SpawnedPeds[i], true)
@@ -138,7 +135,6 @@ function SpawnPeds()
         else
             Citizen.InvokeNative(0x77FF8D35EEC6BBC4, SpawnedPeds[i], 7, true)
         end
-
         NativeUpdatePedVariation(SpawnedPeds[i])
         SetEntityInvincible(SpawnedPeds[i], true)
         SetEntityCanBeDamagedByRelationshipGroup(SpawnedPeds[i], false, GetHashKey("PLAYER"))
@@ -148,9 +144,10 @@ function SpawnPeds()
             NativeSetPedComponentEnabled(SpawnedPeds[i], ComponentsFemale["BODIES_LOWER"][10], false, true, true)
         end
         NativeUpdatePedVariation(SpawnedPeds[i])
-
+        table.insert(alltempt.peds, SpawnedPeds[i])
     end
-
+    SetModelAsNoLongerNeeded(maleHash)
+    SetModelAsNoLongerNeeded(femaleHash)
     return SpawnedPeds
 end
 
@@ -158,11 +155,13 @@ function deleteTemps()
     for k,l in pairs(alltempt.peds) do
         DeleteEntity(l)
     end
+    alltempt.peds = {}
     if tempPrompt then
         for k,l in pairs(tempPrompt)do
             PromptDelete(l)
         end
     end
+    tempPrompt = {}
 end
 
 function DeletePeds(SpawnedPeds)
@@ -215,10 +214,7 @@ end
 function StartSelectCam()
     DoScreenFadeOut(1000)
     Wait(1000)
-    SetEntityCoords(PlayerPedId(), -563.99, -3776.72, 237.60)
-    Wait(2000)
-    cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraCoords[1].x, CameraCoords[1].y, CameraCoords[1].z, 0, 0,
-        0, GetGameplayCamFov())
+    cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraCoords[1].x, CameraCoords[1].y, CameraCoords[1].z, 0, 0,0, GetGameplayCamFov())
     PointCamAtCoord(cam, SpawnCoords[1])
     SetCamActive(cam, true)
     RenderScriptCams(true, true, 1000, true, false)
@@ -232,7 +228,7 @@ function LightAndCam()
     local left = 0xA65EBAB4
     local right = 0xDEB34313
     local accept = 0x2CD5343E
-    local data = {        
+    local data = {
         str = "Select",
         button = {left,right},
         holdmode = false,
@@ -266,10 +262,9 @@ function LightAndCam()
         end
         if PromptIsReleased(accept) then
             StartCharacterCreatorCamera()
+            deleteTemps()
         end
     end
-    PromptDelete(left_right)
-    PromptDelete(accept)
     local blank = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", " ", Citizen.ResultAsLong())
     Citizen.InvokeNative(0xFA233F8FE190514C, blank)
     Citizen.InvokeNative(0xE9990552DEC71600)
@@ -321,8 +316,7 @@ function StartCharacterCreatorCamera()
     SetCamActive(cam, false)
     DestroyCam(cam)
     cam = nil
-    CharacterCreatorCamera = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", -560.133, -3780.92, 238.6, 0, 0, 0,
-        GetGameplayCamFov())
+    CharacterCreatorCamera = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", -560.133, -3780.92, 238.6, 0, 0, 0, GetGameplayCamFov())
     SetCamActive(CharacterCreatorCamera, true)
     SetCamActiveWithInterp(CharacterCreatorCamera, cam2, 1000)
     PointCamAtCoord(CharacterCreatorCamera, -558.32, -3781.11, 238.60)
@@ -519,7 +513,7 @@ function LoadHair(target, data)
                 if tonumber(data.hair.model) > 0 then
                     if IsPedMale(target) then
                         if hairs_list["male"]["hair"][tonumber(data.hair.model)] ~= nil then
-                            if hairs_list["male"]["hair"][tonumber(data.hair.model)][tonumber(data.hair.texture)] ~= nil then       
+                            if hairs_list["male"]["hair"][tonumber(data.hair.model)][tonumber(data.hair.texture)] ~= nil then
                                 local hair = hairs_list["male"]["hair"][tonumber(data.hair.model)][tonumber(data.hair.texture)].hash
                                 NativeSetPedComponentEnabled(target, tonumber(hair), false, true, true)
                             end
@@ -594,7 +588,6 @@ end
 function LoadBodySize(target, data)
     Citizen.InvokeNative(0x1902C4CFCC5BE57C, target, BODY_TYPES[tonumber(data.body_size)])
     NativeUpdatePedVariation(target)
-    
 end
 
 function LoadBodyWaist(target, data)
