@@ -59,6 +59,9 @@ local BodyFunctions = {
     ["height"] = function(target, data)
         LoadHeight(target, data)
     end,
+    ["teeth"] = function(target, data)
+        LoadTeeth(target, data)
+    end,
 }
 
 local FaceFunctions = {
@@ -213,6 +216,7 @@ AddEventHandler('RedEM:client:ApplySkin', function(SkinData, Target, ClothesData
         LoadFeatures(_Target, _SkinData)
         LoadBodySize(_Target, _SkinData)
         LoadBodyWaist(_Target, _SkinData)
+	LoadTeeth(_Target, _SkinData)
         LoadOverlays(_Target, _SkinData)
         TriggerServerEvent("redemrp_respawn:TestDeathStatus")
         SetEntityAlpha(_Target, 255)
@@ -274,6 +278,7 @@ RegisterNetEvent('RedEM:client:ApplySkinCommand', function(SkinData, Target, Clo
             LoadFeatures(_Target, _SkinData)
             LoadBodySize(_Target, _SkinData)
             LoadBodyWaist(_Target, _SkinData)
+	    LoadTeeth(_Target, _SkinData)
             LoadOverlays(_Target, _SkinData)
             TriggerServerEvent("redemrp_respawn:TestDeathStatus")
             SetEntityAlpha(_Target, 255)
@@ -406,6 +411,7 @@ function OpenBodyMenu()
     MenuData.CloseAll()
     local BodySizeOptions = {"Skinny", "Athletic", "Average", "Heavy", "Burly"}
     local BodyWaistOptions = {}
+    local TeethOptions = {"0","1","2","3","4","5","6"}
     for i, v in ipairs(WAIST_TYPES) do
         table.insert(BodyWaistOptions, "+ " .. (i / 2) .. " kg")
     end
@@ -425,6 +431,15 @@ function OpenBodyMenu()
         max = 120,
         hop = 6
     }, {
+        label = "Teeth",
+        value = CreatorCache["teeth"] or 1,
+        category = "teeth",
+        desc = "Change your teeth",
+        type = "slider",
+        min = 0,
+        max = 6,
+        options = TeethOptions
+    },{
         label = "Face Width",
         value = CreatorCache["face_width"] or 0,
         category = "face_width",
