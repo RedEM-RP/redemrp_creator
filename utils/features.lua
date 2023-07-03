@@ -75,3 +75,7 @@ WAIST_TYPES = {
     -867801909,
     1960266524,        -- biggest
 }
+TEETH_TYPES = {
+    male = "CLOTHING_ITEM_M_TEETH_00",
+    female = "CLOTHING_ITEM_F_TEETH_00",
+}
