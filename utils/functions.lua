@@ -581,6 +581,25 @@ function LoadBodyWaist(target, data)
     NativeUpdatePedVariation(target)
 end
 
+function LoadTeeth(target, data)
+    local animf = {"mouth_looted","face_human@gen_male_timid@base"}
+    RequestAnimDict(animf[2])
+    while not HasAnimDictLoaded(animf[2]) do 
+        Wait(1)
+    end
+    local a = "male"
+    if not IsPedMale(target) then 
+        a = "female"
+    end
+    local b = GetHashKey(TEETH_TYPES[a]..(data.teeth or 0))
+    NativeSetPedComponentEnabled(target, b, false, true, true)
+    NativeUpdatePedVariation(target)
+    SetFacialIdleAnimOverride(target, animf[2], animf[1])
+    SetTimeout(2000, function()
+        ClearFacialIdleAnimOverride(target)
+    end)
+end
+
 function LoadFeatures(target, data)
     local feature
     for k, v in pairs(features_name) do
